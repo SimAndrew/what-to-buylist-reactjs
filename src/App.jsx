@@ -1,5 +1,14 @@
+import { useState } from 'react';
+import Form from './Form.jsx';
+
 const App = () => {
-	return <h1>What To Buy List</h1>;
+	const [items, setItems] = useState([]);
+
+	return (
+		<section className="section-center">
+			<Form />
+		</section>
+	);
 };
 
 export default App;
